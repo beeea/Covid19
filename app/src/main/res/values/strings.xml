@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Covid19CV</string>
+    <string name="textview">TextView</string>
+    <string name="diagnostic">DIAGNÓSTICO %1$s</string>
+    
+    <string-array name="contactoDirecto">
+        <item>Sí</item>
+        <item>No</item>
+    </string-array>
+</resources>

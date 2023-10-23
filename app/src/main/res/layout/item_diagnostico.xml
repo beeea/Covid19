@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="12dp"
+    android:layout_height="wrap_content"
+    app:cardElevation="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="110"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="20"
+            android:padding="10dp"
+            android:background="@color/light_blue">
+
+            <TextView
+                android:id="@+id/code"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/diagnostic"
+                android:textColor="@color/dark_blue3"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="30"
+            android:weightSum="10"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_calendar"
+                android:layout_weight="0.1"
+                android:padding="10dp"/>
+
+            <TextView
+                android:id="@+id/textoFecha"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="7.5"
+                android:gravity="center_vertical"
+                android:text="Fecha Inicio Síntomas"
+                android:textColor="@color/darkblue2" />
+
+            <TextView
+                android:id="@+id/fecha"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="2.4"
+                android:gravity="center_vertical"
+                android:text="TextView"
+                android:textAlignment="textEnd"
+                tools:ignore="RtlCompat" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="30"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:src="@drawable/ic_sintoma" />
+
+            <TextView
+                android:id="@+id/textoSintomas"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="7.5"
+                android:gravity="center_vertical"
+                android:text="Síntomas"
+                android:textColor="@color/darkblue2" />
+
+            <TextView
+                android:id="@+id/sintomas"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="2.2"
+                android:gravity="center_vertical"
+                android:inputType="textMultiLine|textImeMultiLine"
+                android:text="TextView"
+                android:textAlignment="textEnd"
+                tools:ignore="RtlCompat" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="30"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_close"
+                android:padding="6dp"
+                />
+
+            <TextView
+                android:id="@+id/textoContacto"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="7.5"
+                android:gravity="center_vertical"
+                android:text="Contacto"
+                android:textColor="@color/darkblue2" />
+
+            <TextView
+                android:id="@+id/contacto"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="2.2"
+                android:gravity="center_vertical"
+                android:text="TextView"
+                android:textAlignment="textEnd"
+                tools:ignore="RtlCompat" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

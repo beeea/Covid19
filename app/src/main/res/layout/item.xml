@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="12dp"
+    android:layout_height="wrap_content"
+    app:cardElevation="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@color/darkblue2">
+
+        <TextView
+            android:id="@+id/municipio"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="TextView"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:weightSum="10"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:src="@drawable/ic_died" />
+
+        <TextView
+            android:id="@+id/textoMuertes"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="7.5"
+            android:gravity="center_vertical"
+            android:text="Defunciones"
+            android:textColor="@color/darkblue2" />
+
+        <TextView
+            android:id="@+id/muertes"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="2.2"
+            android:gravity="center_vertical"
+            android:text="TextView"
+            android:textAlignment="textEnd"
+            tools:ignore="RtlCompat" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:weightSum="10"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:scaleX="0.95"
+            android:layout_weight="0.1"
+            android:scaleY="0.95"
+            android:src="@drawable/ic_covid" />
+
+        <TextView
+            android:id="@+id/textoIncidencia"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="7.5"
+            android:gravity="center_vertical"
+            android:text="Incidencia PCR"
+            android:textColor="@color/darkblue2" />
+
+        <TextView
+            android:id="@+id/incidencia"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="2.4"
+            android:gravity="center_vertical"
+            android:text="TextView"
+            android:textAlignment="textEnd"
+            tools:ignore="RtlCompat" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:weightSum="10"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:src="@drawable/ic_mask" />
+
+        <TextView
+            android:id="@+id/textoCasos"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="7.5"
+            android:gravity="center_vertical"
+            android:text="Casos PCR"
+            android:textColor="@color/darkblue2" />
+
+        <TextView
+            android:id="@+id/casos"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="2.2"
+            android:gravity="center_vertical"
+            android:text="TextView"
+            android:textAlignment="textEnd"
+            tools:ignore="RtlCompat" />
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

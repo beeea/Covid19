@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/app_bar_search"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="Search"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/boton_abc"
+        android:icon="@drawable/ic_abc"
+        android:title="Ordenar alfabéticamente"
+        app:showAsAction="always" />
+    <item android:id="@+id/boton_down"
+        android:icon="@drawable/ic_death_down"
+        android:title="Ordenar descendentemente"
+        app:showAsAction="always"/>
+    <item android:id="@+id/boton_up"
+        android:icon="@drawable/ic_death_up"
+        android:title="Ordenar ascendentemente"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/boton_incidencia"
+        android:icon="@drawable/ic_covid2"
+        android:title="Generalitat Valenciana website"
+        app:showAsAction="always" />
+
+</menu>

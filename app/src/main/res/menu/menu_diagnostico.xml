@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:id="@+id/guardar"
+        android:icon="@drawable/ic_save"
+        android:title="Guardar"
+        app:showAsAction="always"/>
+    <item android:id="@+id/borrar"
+        android:icon="@drawable/ic_delete"
+        android:title="Borrar"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/ubi"
+        android:icon="@drawable/ic_gps"
+        android:title="Ubicación"
+        app:showAsAction="always" />
+
+</menu>

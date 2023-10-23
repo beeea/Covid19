@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar_municipio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:menu="@menu/info_municipio"
+            app:title=" " />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="INFORMACIÓN DEL MUNICIPIO"
+        android:textColor="@color/darkblue2"
+        android:textSize="25sp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/materialCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/darkblue2"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/municipioDatos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="TextView"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:weightSum="10">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:src="@drawable/ic_pin" />
+
+            <TextView
+                android:id="@+id/textoId"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="7.5"
+                android:gravity="center_vertical"
+                android:text="Identificador"
+                android:textColor="@color/orange" />
+
+            <TextView
+                android:id="@+id/id"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="2.2"
+                android:gravity="center_vertical"
+                android:text="TextView"
+                android:textAlignment="textEnd"
+                tools:ignore="RtlCompat" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:weightSum="10">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:src="@drawable/ic_map" />
+
+            <TextView
+                android:id="@+id/textoCodMunicipio"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="7.5"
+                android:gravity="center_vertical"
+                android:text="Código del Municipio"
+                android:textColor="@color/orange" />
+
+            <TextView
+                android:id="@+id/codMunicipio"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1.9"
+                android:gravity="center_vertical"
+                android:text="TextView"
+                android:textAlignment="textEnd"
+                tools:ignore="RtlCompat" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="120dp"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:weightSum="10">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:src="@drawable/ic_died" />
+
+            <TextView
+                android:id="@+id/textoMuertes"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="7.5"
+                android:gravity="center_vertical"
+                android:text="Defunciones"
+                android:textColor="@color/orange" />
+
+            <TextView
+                android:id="@+id/muertes"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="2.2"
+                android:gravity="center_vertical"
+                android:text="TextView"
+                android:textAlignment="textEnd"
+                tools:ignore="RtlCompat" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="160dp"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:weightSum="10">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.1"
+                android:scaleX="0.95"
+                android:scaleY="0.95"
+                android:src="@drawable/ic_covid" />
+
+            <TextView
+                android:id="@+id/textoIncidencia"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="7.5"
+                android:gravity="center_vertical"
+                android:text="Incidencia PCR"
+                android:textColor="@color/orange" />
+
+            <TextView
+                android:id="@+id/incidencia"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="2.4"
+                android:gravity="center_vertical"
+                android:text="TextView"
+                android:textAlignment="textEnd"
+                tools:ignore="RtlCompat" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200dp"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:weightSum="10">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:scaleX="0.95"
+                android:scaleY="0.95"
+                android:src="@drawable/ic_covid" />
+
+            <TextView
+                android:id="@+id/textoIncidencia14"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="7.5"
+                android:gravity="center_vertical"
+                android:text="Incidencia acumulada PCR+ 14"
+                android:textColor="@color/orange" />
+
+            <TextView
+                android:id="@+id/incidencia14"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="2.2"
+                android:gravity="center_vertical"
+                android:text="TextView"
+                android:textAlignment="textEnd"
+                tools:ignore="RtlCompat" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="240dp"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:weightSum="10">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:src="@drawable/ic_mask" />
+
+            <TextView
+                android:id="@+id/textoCasos"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="7.5"
+                android:gravity="center_vertical"
+                android:text="Casos PCR"
+                android:textColor="@color/orange" />
+
+            <TextView
+                android:id="@+id/casos"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="2.2"
+                android:gravity="center_vertical"
+                android:text="TextView"
+                android:textAlignment="textEnd"
+                tools:ignore="RtlCompat" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="280dp"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:weightSum="10">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:src="@drawable/ic_mask" />
+
+            <TextView
+                android:id="@+id/textoCasos14"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="7.5"
+                android:gravity="center_vertical"
+                android:text="Casos PCR+ 14 días"
+                android:textColor="@color/orange" />
+
+            <TextView
+                android:id="@+id/casos14"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="2.2"
+                android:gravity="center_vertical"
+                android:text="TextView"
+                android:textAlignment="textEnd"
+                tools:ignore="RtlCompat" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="320dp"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:weightSum="10">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:src="@drawable/ic_died" />
+
+            <TextView
+                android:id="@+id/textoTasa"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="7.5"
+                android:gravity="center_vertical"
+                android:text="Tasa de defunción"
+                android:textColor="@color/orange" />
+
+            <TextView
+                android:id="@+id/tasa"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="2.2"
+                android:gravity="center_vertical"
+                android:text="TextView"
+                android:textAlignment="textEnd"
+                tools:ignore="RtlCompat" />
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="16dp"
+        android:contentDescription="botón flotante"
+        android:src="@drawable/ic_plus"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialCardView"
+        tools:listitem="@layout/item_diagnostico" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="231dp"
+        android:layout_marginTop="4dp"
+        android:background="#00D14646"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialCardView"
+        app:srcCompat="@drawable/ic_dashboard" />
+</androidx.constraintlayout.widget.ConstraintLayout>
